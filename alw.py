@@ -13,6 +13,7 @@ async def test(ctx):
 async def join(ctx):
     channel = ctx.message.author.voice.channel
     await channel.connect()
+    await ctx.send("ok")
 
 @bot.command()
 async def leave(ctx):
